@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url("/assets/fonts/Inconsolata-VariableFont_wdth,wght.ttf");
+}
+
+@layer utilities {
+  .bg-custom {
+    background-image: url("/assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg"),
+      url("/assets/images/pattern-circle.svg"),
+      url("/assets/images/pattern-squiggly-line-top.svg"),
+      url("/assets/images/pattern-lines.svg"),
+      url("/assets/images/background-mobile.png");
+
+    background-position:
+      bottom left,
+      top -30px left -20px,
+      right top 24px,
+      top right -5px,
+      center;
+    background-size: 300px, 107px, 112px, 990px, cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+}

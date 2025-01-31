@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Conference ticket generator</title>
+
+    <link rel="stylesheet" href="src/output.css" />
+
+    <script src="script.js" defer></script>
+  </head>
+  <body class="bg-custom font-e_inconsolata tracking-tight text-e_white">
+    <main class="mx-4 my-8 grid place-items-center gap-y-10">
+      <img
+        src="/assets/images/logo-full.svg"
+        alt="Coding Conf logo"
+        class="h-6"
+      />
+      <section class="grid gap-y-10">
+        <div class="grid gap-y-5 text-center">
+          <h1 class="text-[29px] font-e_extraBold leading-[33px]">
+            Your Journey to Coding Conf 2025 Starts Here!
+          </h1>
+          <p class="px-3 text-[20px] leading-[24px] text-e_lightGrey">
+            Secure your spot at next year's biggest coding conference.
+          </p>
+        </div>
+        <form class="grid gap-y-5" id="ticketForm">
+          <!-- Upload Avatar -->
+          <div class="grid gap-y-2">
+            <p class="text-[20px]">Upload Avatar</p>
+            <label
+              for="uploadAvatar"
+              class="grid place-items-center gap-y-4 rounded-xl border-[2px] border-dashed border-e_lightBlue bg-e_blue bg-opacity-30 py-4 hover:cursor-pointer"
+            >
+              <div
+                class="grid h-[50px] w-[50px] place-items-center overflow-hidden rounded-xl border border-e_blue bg-e_blue bg-opacity-50"
+              >
+                <img
+                  src="assets/images/icon-upload.svg"
+                  alt="upload icon"
+                  id="preview"
+                />
+              </div>
+              <p class="text-[18px] tracking-normal text-e_lightGrey">
+                Drag and drop or click to upload
+              </p>
+              <div class="flex gap-3">
+                <button>Remove Image</button>
+                <button>Change Image</button>
+              </div>
+              <input
+                type="file"
+                id="uploadAvatar"
+                accept="image/png"
+                class="hidden"
+              />
+            </label>
+            <div class="mt-[2px] flex gap-2">
+              <img
+                src="assets/images/icon-info.svg"
+                alt="info icon"
+                class="w-[16px]"
+              />
+              <span class="text-[11.5px] tracking-normal text-e_lightBlue">
+                Upload your photo (JPG or PNG, max size: 500KB).
+              </span>
+            </div>
+            <div class="mt-[2px] hidden gap-2">
+              <img
+                src="assets/images/icon-info-error.svg"
+                alt="info icon"
+                class="w-[16px]"
+              />
+              <span class="text-[11.5px] tracking-normal text-e_peach">
+                File too large. Please upload a photo under 500KB
+              </span>
+            </div>
+          </div>
+          <!-- Full Name -->
+          <label for="fullName" class="grid gap-y-[10px]">
+            <span class="text-[20px]">Full Name</span>
+            <input
+              type="text"
+              id="fullName"
+              class="rounded-xl border-[1px] border-e_lightBlue bg-e_blue bg-opacity-30 px-4 py-[14px] hover:cursor-pointer"
+              required
+            />
+            <span class="hidden text-red-500" id="fullNameError">Ciao</span>
+          </label>
+          <!-- Email Address -->
+          <label for="email" class="grid gap-y-[10px]">
+            <span class="text-[20px]">Email Address</span>
+            <input
+              type="email"
+              id="email"
+              class="rounded-xl border-[1px] border-e_lightBlue bg-e_blue bg-opacity-30 px-4 py-[14px] placeholder:text-[19px] hover:cursor-pointer"
+              placeholder="example@email.com"
+            />
+          </label>
+          <!-- GitHub Username -->
+          <label for="githubUsername" class="grid gap-y-[10px]">
+            <span class="text-[20px]">GitHub Username</span>
+            <input
+              type="text"
+              id="githubUsername"
+              class="rounded-xl border-[1px] border-e_lightBlue bg-e_blue bg-opacity-30 px-4 py-[14px] placeholder:text-[19px] hover:cursor-pointer"
+              placeholder="@yourusername"
+            />
+          </label>
+          <button
+            class="mt-1 rounded-xl bg-e_peach py-[12px] text-[20px] font-e_extraBold text-e_darkBlue"
+            type="submit"
+          >
+            Generate My Ticket
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
+
+<!--
+    Full Name Email
+    Address example@email.com GitHub Username @yourusername Generate My Ticket
+
+    Congrats,
+
+    ! Your ticket is ready. We've emailed your ticket to
+
+    and will send updates in the run up to the event. Coding Conf Jan 31, 2025 /
+    Austin, TX
+-->
