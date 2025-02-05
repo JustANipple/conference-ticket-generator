@@ -36,7 +36,6 @@ function handleFormSubmit(event) {
     toggleVisibility(uploadError, true);
     toggleVisibility(uploadInfo, false);
     isValid = false;
-    console.log("non valido");
   }
 
   const fullName = document.getElementById("fullName");
@@ -47,8 +46,24 @@ function handleFormSubmit(event) {
     isValid = false;
   }
 
+  const email = document.getElementById("email");
+  const emailError = document.getElementById("emailError");
+  if (email.textLength <= 0 || !email.checkValidity()) {
+    toggleVisibility(emailError, true);
+    email.classList.add("border-e_peach");
+    isValid = false;
+  }
+
+  const githubUsername = document.getElementById("githubUsername");
+  const githubUsernameError = document.getElementById("gitHubUsernameError");
+  if (githubUsername.textLength <= 0) {
+    toggleVisibility(githubUsernameError, true);
+    githubUsername.classList.add("border-e_peach");
+    isValid = false;
+  }
+
   if (isValid) {
-    // Submit the form or perform further actions
+    // Submit the form
   }
 }
 

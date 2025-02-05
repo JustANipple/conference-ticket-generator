@@ -20,7 +20,7 @@
   <body
     class="bg-custom overflow-hidden font-e_inconsolata tracking-tight text-e_white"
   >
-    <main class="mx-4 my-8 grid place-items-center gap-y-10">
+    <main class="mx-4 my-8 grid place-items-center gap-y-10 hidden">
       <img
         src="/assets/images/logo-full.svg"
         alt="Coding Conf logo"
@@ -169,6 +169,61 @@
           </button>
         </form>
       </section>
+    </main>
+      <div>
+        <img src="/assets/images/logo-full.svg" alt="Coding conf logo">
+        <div>
+          <h1>Congrats, 
+            <span>Jonatan Kristof!</span> 
+            Your ticket is ready.
+          </h1>
+          <p>We've email your ticket to
+            <span>jonatan@email.com</span>
+            and will send updates in the run up to the event.
+          </p>
+        </div>
+      </div>
+      <div class="relative" >
+        <img src="assets/images/pattern-ticket.svg" alt="ticket" />
+        <div class="absolute top-0 left-0 right-0 bottom-0 flex">
+          <div>
+            <div>
+              <img src="/assets/images/logo-full.svg" alt="Coding conf logo">
+              <span>Jan 31, 2025 / Austin, TX</span>
+            </div>
+            <div>
+              <label for="uploadAvatar" >
+                <div
+                  class="grid h-[50px] w-[50px] place-items-center overflow-hidden rounded-xl border border-e_blue bg-e_blue bg-opacity-50"
+                >
+                  <img
+                    src="assets/images/icon-upload.svg"
+                    alt="upload icon"
+                    id="preview"
+                  />
+                </div>
+                <input
+                  type="file"
+                  id="uploadAvatar"
+                  accept="image/png"
+                  class="hidden"
+                />
+              </label>
+              <div>
+                <p>Jonatan Kristof</p>
+                <div>
+                  <img src="/assets/images/icon-github.svg" alt="Github icon">
+                  <span>@jonatankristof0101</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="rotate-90 text-red-500 w-fit">#01609</p>
+        </div>
+        
+      </div>
+    <main>
+
     </main>
   </body>
 </html>
