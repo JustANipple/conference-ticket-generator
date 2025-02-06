@@ -16,6 +16,7 @@ function handleFileUpload(event) {
       const reader = new FileReader();
       reader.onload = function (e) {
         document.getElementById("preview").src = e.target.result;
+        document.getElementById("ticketPreview").src = e.target.result;
       };
       reader.readAsDataURL(file);
       toggleVisibility(uploadText, false);
@@ -63,7 +64,18 @@ function handleFormSubmit(event) {
   }
 
   if (isValid) {
-    // Submit the form
+    const ticketName = document.getElementById("ticketName");
+    const ticketGithubUsername = document.getElementById("ticketGithubUsername");
+    const ticketTitleName = document.getElementById("ticketTitleName");
+    const ticketEmail = document.getElementById("ticketEmail");
+
+    ticketName.textContent = fullName.value;
+    ticketGithubUsername.textContent = githubUsername.value;
+    ticketTitleName.textContent = fullName.value;
+    ticketEmail.textContent = email.value;
+
+    document.getElementById("ticketGenerator").classList.add("hidden");
+    document.getElementById("ticketContainer").classList.remove("hidden");
   }
 }
 

@@ -18,9 +18,9 @@
     <script src="script.js" defer></script>
   </head>
   <body
-    class="bg-custom overflow-hidden font-e_inconsolata tracking-tight text-e_white"
+    class="bg-custom font-e_inconsolata tracking-tight text-e_white"
   >
-    <main class="mx-4 my-8 grid place-items-center gap-y-10 hidden">
+    <main class="px-4 py-8 grid place-items-center gap-y-10" id="ticketGenerator">
       <img
         src="/assets/images/logo-full.svg"
         alt="Coding Conf logo"
@@ -170,60 +170,53 @@
         </form>
       </section>
     </main>
-      <div>
-        <img src="/assets/images/logo-full.svg" alt="Coding conf logo">
-        <div>
-          <h1>Congrats, 
-            <span>Jonatan Kristof!</span> 
+    <main class="grid place-items-center py-8 px-4 gap-y-[72px] hidden" id="ticketContainer">
+      <div class="w-fit grid place-items-center gap-y-[40px]">
+        <img src="/assets/images/logo-full.svg" alt="Coding conf logo" class="max-h-6">
+        <div class="text-center grid gap-y-4">
+          <h1 class="text-3xl font-e_bold leading-8">Congrats, 
+            <span class="bg-gradient-to-r from-e_gradientFrom to-e_gradientTo bg-clip-text text-transparent" id="ticketTitleName">Jonatan Kristof!</span>
             Your ticket is ready.
           </h1>
-          <p>We've email your ticket to
-            <span>jonatan@email.com</span>
+          <p class="text-xl">We've email your ticket to
+            <span class="text-e_peach" id="ticketEmail">jonatan@email.com</span>
             and will send updates in the run up to the event.
           </p>
         </div>
       </div>
-      <div class="relative" >
+      <div class="relative max-w-[342px]" >
         <img src="assets/images/pattern-ticket.svg" alt="ticket" />
-        <div class="absolute top-0 left-0 right-0 bottom-0 flex">
-          <div>
+        <div class="absolute top-0 left-0 right-0 bottom-0 flex px-4 py-5 justify-between">
+          <div class="grid gap-y-7">
             <div>
-              <img src="/assets/images/logo-full.svg" alt="Coding conf logo">
-              <span>Jan 31, 2025 / Austin, TX</span>
+              <img src="/assets/images/logo-full.svg" alt="Coding conf logo" class="max-h-6">
+              <span class="text-sm pl-9 text-e_lightBlue">Jan 31, 2025 / Austin, TX</span>
             </div>
-            <div>
+            <div class="flex gap-4">
               <label for="uploadAvatar" >
                 <div
-                  class="grid h-[50px] w-[50px] place-items-center overflow-hidden rounded-xl border border-e_blue bg-e_blue bg-opacity-50"
+                  class="grid h-[47px] w-[47px] place-items-center overflow-hidden rounded-xl border border-e_blue bg-e_blue bg-opacity-50"
                 >
-                  <img
-                    src="assets/images/icon-upload.svg"
-                    alt="upload icon"
-                    id="preview"
-                  />
-                </div>
-                <input
-                  type="file"
-                  id="uploadAvatar"
-                  accept="image/png"
-                  class="hidden"
+                <img
+                  src="assets/images/icon-upload.svg"
+                  alt="upload icon"
+                  id="ticketPreview"
                 />
+                </div>
               </label>
               <div>
-                <p>Jonatan Kristof</p>
-                <div>
-                  <img src="/assets/images/icon-github.svg" alt="Github icon">
-                  <span>@jonatankristof0101</span>
+                <p id="ticketName">Jonatan Kristof</p>
+                <div class="flex gap-1 align-middle">
+                  <img src="/assets/images/icon-github.svg" alt="Github icon" class="max-h-5">
+                  <span class="text-e_lightBlue text-sm" id="ticketGithubUsername">@jonatankristof0101</span>
                 </div>
               </div>
             </div>
           </div>
-          <p class="rotate-90 text-red-500 w-fit">#01609</p>
+          <p class="rotate-90 w-fit pt-5 text-2xl text-e_lightBlue">#01609</p>
         </div>
         
       </div>
-    <main>
-
     </main>
   </body>
 </html>
