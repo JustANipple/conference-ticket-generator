@@ -9,11 +9,11 @@
 
 @layer utilities {
   .bg-custom {
-    background-image: url("/assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg"),
-      url("/assets/images/pattern-circle.svg"),
-      url("/assets/images/pattern-squiggly-line-top.svg"),
-      url("/assets/images/pattern-lines.svg"),
-      url("/assets/images/background-mobile.png");
+    background-image: url("../assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg"),
+      url("../assets/images/pattern-circle.svg"),
+      url("../assets/images/pattern-squiggly-line-top.svg"),
+      url("../assets/images/pattern-lines.svg"),
+      url("../assets/images/background-mobile.png");
 
     background-position:
       bottom left,
@@ -28,11 +28,11 @@
 
   @media screen and (min-width: 768px) {
     .bg-custom {
-      background-image: url("/assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg"),
-        url("/assets/images/pattern-circle.svg"),
-        url("/assets/images/pattern-squiggly-line-top.svg"),
-        url("/assets/images/pattern-lines.svg"),
-        url("/assets/images/background-tablet.png");
+      background-image: url("../assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg"),
+        url("../assets/images/pattern-circle.svg"),
+        url("../assets/images/pattern-squiggly-line-top.svg"),
+        url("../assets/images/pattern-lines.svg"),
+        url("../assets/images/background-tablet.png");
 
       background-position:
         bottom left,
@@ -48,12 +48,12 @@
 
   @media screen and (min-width: 1024px) {
     .bg-custom {
-      background-image: url("/assets/images/pattern-squiggly-line-bottom-desktop.svg"),
-        url("/assets/images/pattern-circle.svg"),
-        url("/assets/images/pattern-circle.svg"),
-        url("/assets/images/pattern-squiggly-line-top.svg"),
-        url("/assets/images/pattern-lines.svg"),
-        url("/assets/images/background-desktop.png");
+      background-image: url("../assets/images/pattern-squiggly-line-bottom-desktop.svg"),
+        url("../assets/images/pattern-circle.svg"),
+        url("../assets/images/pattern-circle.svg"),
+        url("../assets/images/pattern-squiggly-line-top.svg"),
+        url("../assets/images/pattern-lines.svg"),
+        url("../assets/images/background-desktop.png");
 
       background-position:
         bottom -20px left 2px,
