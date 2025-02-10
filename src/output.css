@@ -1126,18 +1126,21 @@ video {
     padding-bottom: 1.75rem;
   }
 
-  .md\:py-\[130px\] {
-    padding-top: 130px;
-    padding-bottom: 130px;
-  }
-
   .md\:py-\[42px\] {
     padding-top: 42px;
     padding-bottom: 42px;
   }
 
+  .md\:pb-\[130px\] {
+    padding-bottom: 130px;
+  }
+
   .md\:pl-\[60px\] {
     padding-left: 60px;
+  }
+
+  .md\:pt-\[40px\] {
+    padding-top: 40px;
   }
 
   .md\:pt-\[80px\] {
