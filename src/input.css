@@ -63,7 +63,7 @@
         top left -49px,
         center top;
       background-size: 820px, 220px, 220px, 450px, 1460px, cover;
-      background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat,
+      background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-x,
         no-repeat;
       min-height: 100vh;
     }
