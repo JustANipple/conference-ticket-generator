@@ -1003,7 +1003,7 @@ video {
 @font-face {
   font-family: "Inconsolata";
 
-  src: url("/assets/fonts/Inconsolata-VariableFont_wdth,wght.ttf");
+  src: url("../assets/fonts/Inconsolata-VariableFont_wdth,wght.ttf");
 }
 
 .placeholder\:text-\[19px\]::-moz-placeholder {
