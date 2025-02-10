@@ -18,24 +18,31 @@
     <script src="script.js" defer></script>
   </head>
   <body
-    class="bg-custom font-e_inconsolata tracking-tight text-e_white"
+    class="bg-custom grid place-items-center font-e_inconsolata tracking-tight text-e_white md:tracking-normal"
   >
-    <main class="px-4 py-8 grid place-items-center gap-y-10" id="ticketGenerator">
+    <main
+      class="grid place-items-center gap-y-10 px-4 py-8 md:max-w-[900px] md:gap-y-[58px] md:py-10"
+      id="ticketGenerator"
+    >
       <img
         src="/assets/images/logo-full.svg"
         alt="Coding Conf logo"
-        class="h-6"
+        class="h-6 md:h-[30px]"
       />
-      <section class="grid gap-y-10">
+      <section class="grid place-items-center gap-y-10 md:gap-y-[42px]">
         <div class="grid gap-y-5 text-center">
-          <h1 class="text-[29px] font-e_extraBold leading-[33px]">
+          <h1
+            class="text-[29px] font-e_extraBold leading-[33px] md:text-[58px] md:leading-[68px]"
+          >
             Your Journey to Coding Conf 2025 Starts Here!
           </h1>
-          <p class="px-3 text-[20px] leading-[24px] text-e_lightGrey">
+          <p
+            class="px-3 text-[20px] leading-[24px] text-e_lightGrey md:text-[23px]"
+          >
             Secure your spot at next year's biggest coding conference.
           </p>
         </div>
-        <form class="grid gap-y-5" id="ticketForm">
+        <form class="grid gap-y-5 md:w-[460px]" id="ticketForm">
           <!-- Upload Avatar -->
           <div class="grid gap-y-2">
             <p class="text-[20px]">Upload Avatar</p>
@@ -170,52 +177,89 @@
         </form>
       </section>
     </main>
-    <main class="grid place-items-center py-8 px-4 gap-y-[72px] hidden" id="ticketContainer">
-      <div class="w-fit grid place-items-center gap-y-[40px]">
-        <img src="/assets/images/logo-full.svg" alt="Coding conf logo" class="max-h-6">
-        <div class="text-center grid gap-y-4">
-          <h1 class="text-3xl font-e_bold leading-8">Congrats, 
-            <span class="bg-gradient-to-r from-e_gradientFrom to-e_gradientTo bg-clip-text text-transparent" id="ticketTitleName">Jonatan Kristof!</span>
+    <main
+      class="grid hidden place-items-center gap-y-[72px] px-4 py-8 md:mb-auto md:py-[42px]"
+      id="ticketContainer"
+    >
+      <div class="grid w-fit place-items-center gap-y-[40px] md:gap-y-[70px]">
+        <img
+          src="/assets/images/logo-full.svg"
+          alt="Coding conf logo"
+          class="max-h-6 md:max-h-8"
+        />
+        <div
+          class="grid place-items-center gap-y-4 text-center md:max-w-[800px] md:gap-y-9"
+        >
+          <h1
+            class="text-3xl font-e_bold leading-8 md:text-[58px] md:leading-[64px]"
+          >
+            Congrats,
+            <span
+              class="bg-gradient-to-r from-e_gradientFrom to-e_gradientTo bg-clip-text text-transparent"
+              id="ticketTitleName"
+              >Jonatan Kristof!</span
+            >
             Your ticket is ready.
           </h1>
-          <p class="text-xl">We've email your ticket to
+          <p class="text-xl md:max-w-[500px] md:text-[23px]">
+            We've emailed your ticket to
             <span class="text-e_peach" id="ticketEmail">jonatan@email.com</span>
             and will send updates in the run up to the event.
           </p>
         </div>
       </div>
-      <div class="relative max-w-[342px]" >
+      <div class="relative max-w-[342px] md:mt-[40px] md:max-w-[700px]">
         <img src="assets/images/pattern-ticket.svg" alt="ticket" />
-        <div class="absolute top-0 left-0 right-0 bottom-0 flex px-4 py-5 justify-between">
+        <div
+          class="absolute bottom-0 left-0 right-0 top-0 flex justify-between px-4 py-5 md:px-6 md:py-7"
+        >
           <div class="grid gap-y-7">
             <div>
-              <img src="/assets/images/logo-full.svg" alt="Coding conf logo" class="max-h-6">
-              <span class="text-sm pl-9 text-e_lightBlue">Jan 31, 2025 / Austin, TX</span>
+              <img
+                src="/assets/images/logo-full.svg"
+                alt="Coding conf logo"
+                class="max-h-6 md:h-[45px] md:max-h-full md:w-[270px]"
+              />
+              <span
+                class="pl-9 text-sm text-e_lightBlue md:pl-[60px] md:text-[18px]"
+                >Jan 31, 2025 &nbsp;/&nbsp; Austin, TX</span
+              >
             </div>
-            <div class="flex gap-4">
-              <label for="uploadAvatar" >
+            <div class="flex gap-4 md:max-h-fit">
+              <label for="uploadAvatar">
                 <div
-                  class="grid h-[47px] w-[47px] place-items-center overflow-hidden rounded-xl border border-e_blue bg-e_blue bg-opacity-50"
+                  class="grid h-[47px] w-[47px] place-items-center overflow-hidden rounded-xl border border-e_blue bg-e_blue bg-opacity-50 md:h-[80px] md:w-[80px]"
                 >
-                <img
-                  src="assets/images/icon-upload.svg"
-                  alt="upload icon"
-                  id="ticketPreview"
-                />
+                  <img
+                    src="assets/images/icon-upload.svg"
+                    alt="upload icon"
+                    id="ticketPreview"
+                  />
                 </div>
               </label>
               <div>
-                <p id="ticketName">Jonatan Kristof</p>
+                <p id="ticketName" class="md:text-[28px]">Jonatan Kristof</p>
                 <div class="flex gap-1 align-middle">
-                  <img src="/assets/images/icon-github.svg" alt="Github icon" class="max-h-5">
-                  <span class="text-e_lightBlue text-sm" id="ticketGithubUsername">@jonatankristof0101</span>
+                  <img
+                    src="/assets/images/icon-github.svg"
+                    alt="Github icon"
+                    class="max-h-5"
+                  />
+                  <span
+                    class="text-sm text-e_lightBlue md:text-[20px]"
+                    id="ticketGithubUsername"
+                    >@jonatankristof0101</span
+                  >
                 </div>
               </div>
             </div>
           </div>
-          <p class="rotate-90 w-fit pt-5 text-2xl text-e_lightBlue">#01609</p>
+          <p
+            class="w-fit rotate-90 pt-5 text-2xl text-e_lightBlue md:pt-[80px] md:text-[30px]"
+          >
+            #01609
+          </p>
         </div>
-        
       </div>
     </main>
   </body>

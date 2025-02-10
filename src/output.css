@@ -959,6 +959,47 @@ video {
   min-height: 100vh;
 }
 
+@media screen and (min-width: 768px) {
+  .bg-custom {
+    background-image: url("/assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg"),
+        url("/assets/images/pattern-circle.svg"),
+        url("/assets/images/pattern-squiggly-line-top.svg"),
+        url("/assets/images/pattern-lines.svg"),
+        url("/assets/images/background-tablet.png");
+    background-position:
+        bottom left,
+        top -30px left -20px,
+        right top 24px,
+        top right -5px,
+        center;
+    background-size: 300px, 107px, 200px, 990px, cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bg-custom {
+    background-image: url("/assets/images/pattern-squiggly-line-bottom-desktop.svg"),
+        url("/assets/images/pattern-circle.svg"),
+        url("/assets/images/pattern-circle.svg"),
+        url("/assets/images/pattern-squiggly-line-top.svg"),
+        url("/assets/images/pattern-lines.svg"),
+        url("/assets/images/background-desktop.png");
+    background-position:
+        bottom -20px left 2px,
+        top -87px left 43px,
+        bottom 200px right 285px,
+        right top 75px,
+        top left -49px,
+        center top;
+    background-size: 820px, 220px, 220px, 450px, 1460px, cover;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat,
+        no-repeat;
+    min-height: 100vh;
+  }
+}
+
 @font-face {
   font-family: "Inconsolata";
 
@@ -995,4 +1036,147 @@ video {
 
 .focus\:outline-e_lightBlue:focus {
   outline-color: #8784a4;
+}
+
+@media (min-width: 768px) {
+  .md\:mb-auto {
+    margin-bottom: auto;
+  }
+
+  .md\:mt-\[40px\] {
+    margin-top: 40px;
+  }
+
+  .md\:h-\[30px\] {
+    height: 30px;
+  }
+
+  .md\:h-\[45px\] {
+    height: 45px;
+  }
+
+  .md\:h-\[80px\] {
+    height: 80px;
+  }
+
+  .md\:max-h-8 {
+    max-height: 2rem;
+  }
+
+  .md\:max-h-fit {
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+  }
+
+  .md\:max-h-full {
+    max-height: 100%;
+  }
+
+  .md\:w-\[270px\] {
+    width: 270px;
+  }
+
+  .md\:w-\[460px\] {
+    width: 460px;
+  }
+
+  .md\:w-\[80px\] {
+    width: 80px;
+  }
+
+  .md\:max-w-\[500px\] {
+    max-width: 500px;
+  }
+
+  .md\:max-w-\[700px\] {
+    max-width: 700px;
+  }
+
+  .md\:max-w-\[800px\] {
+    max-width: 800px;
+  }
+
+  .md\:max-w-\[900px\] {
+    max-width: 900px;
+  }
+
+  .md\:gap-y-9 {
+    row-gap: 2.25rem;
+  }
+
+  .md\:gap-y-\[42px\] {
+    row-gap: 42px;
+  }
+
+  .md\:gap-y-\[58px\] {
+    row-gap: 58px;
+  }
+
+  .md\:gap-y-\[70px\] {
+    row-gap: 70px;
+  }
+
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .md\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .md\:py-7 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .md\:py-\[42px\] {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
+  .md\:pl-\[60px\] {
+    padding-left: 60px;
+  }
+
+  .md\:pt-\[80px\] {
+    padding-top: 80px;
+  }
+
+  .md\:text-\[18px\] {
+    font-size: 18px;
+  }
+
+  .md\:text-\[20px\] {
+    font-size: 20px;
+  }
+
+  .md\:text-\[23px\] {
+    font-size: 23px;
+  }
+
+  .md\:text-\[28px\] {
+    font-size: 28px;
+  }
+
+  .md\:text-\[30px\] {
+    font-size: 30px;
+  }
+
+  .md\:text-\[58px\] {
+    font-size: 58px;
+  }
+
+  .md\:leading-\[64px\] {
+    line-height: 64px;
+  }
+
+  .md\:leading-\[68px\] {
+    line-height: 68px;
+  }
+
+  .md\:tracking-normal {
+    letter-spacing: 0em;
+  }
 }

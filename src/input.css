@@ -25,4 +25,47 @@
     background-repeat: no-repeat;
     min-height: 100vh;
   }
+
+  @media screen and (min-width: 768px) {
+    .bg-custom {
+      background-image: url("/assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg"),
+        url("/assets/images/pattern-circle.svg"),
+        url("/assets/images/pattern-squiggly-line-top.svg"),
+        url("/assets/images/pattern-lines.svg"),
+        url("/assets/images/background-tablet.png");
+
+      background-position:
+        bottom left,
+        top -30px left -20px,
+        right top 24px,
+        top right -5px,
+        center;
+      background-size: 300px, 107px, 200px, 990px, cover;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .bg-custom {
+      background-image: url("/assets/images/pattern-squiggly-line-bottom-desktop.svg"),
+        url("/assets/images/pattern-circle.svg"),
+        url("/assets/images/pattern-circle.svg"),
+        url("/assets/images/pattern-squiggly-line-top.svg"),
+        url("/assets/images/pattern-lines.svg"),
+        url("/assets/images/background-desktop.png");
+
+      background-position:
+        bottom -20px left 2px,
+        top -87px left 43px,
+        bottom 200px right 285px,
+        right top 75px,
+        top left -49px,
+        center top;
+      background-size: 820px, 220px, 220px, 450px, 1460px, cover;
+      background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat,
+        no-repeat;
+      min-height: 100vh;
+    }
+  }
 }
